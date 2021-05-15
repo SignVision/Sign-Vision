@@ -2,6 +2,7 @@ package com.example.signvision;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -22,6 +23,8 @@ public class HowToUse extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.warning:
                 if (checked){
+                    Intent HomeIntent = new Intent(HowToUse.this, HomeActivity.class);
+                    startActivity(HomeIntent);
 
                 }
                 else {
