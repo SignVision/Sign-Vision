@@ -20,4 +20,11 @@ public class SpeechToSign extends AppCompatActivity {
 
 
     }
+
+    public void BacktoHomePage(View view) {
+        Intent SpeechToSignIntent = new Intent(SpeechToSign.this, HomeActivity.class);
+        startActivity(SpeechToSignIntent);
+
+
+    }
 }
