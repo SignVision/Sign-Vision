@@ -5,24 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SpeechToSign">
-
+    <EditText
+        android:id="@+id/email_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Text"
+        android:inputType="text" />
     <Button
-        android:id="@+id/SpeechText"
-        android:layout_width="232dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginLeft="91dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/scan_each_letter"
+        android:id="@+id/Translate"
+        android:layout_width="367dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="680dp"
+        android:background="@drawable/upload_video_button"
         android:fontFamily="@font/inter_semibold"
         android:stateListAnimator="@null"
-        android:text="Speak to the camera"
-        android:alpha="0.8"
+        android:text="Translate to Sign"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onTranslateClicked"/>
+
+
+
 
     <TextView
         android:id="@+id/Sign_Translation"
@@ -52,5 +60,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_back"
         tools:ignore="VectorDrawableCompat" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
