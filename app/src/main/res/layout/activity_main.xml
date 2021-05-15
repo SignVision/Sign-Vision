@@ -6,28 +6,58 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <include layout="@layout/content_main" />
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <TextView
+        android:id="@+id/Sign_Vision"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:text="Sign Vision"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/inter_semibold"
+        android:translationX="130dp"
+        android:translationY="600dp"
+        app:drawableTint="#000000"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_main"
+        android:translationX="180dp"
+        android:translationY="360dp"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center" />
+
+    <ImageView
+        android:id="@+id/Circle"
+        android:layout_width="98dp"
+        android:layout_height="104dp"
+        android:scaleX="1.1"
+        android:scaleY="1.1"
+        android:translationX="155dp"
+        android:translationY="280dp"
+        app:srcCompat="@drawable/circle"
+        app:tint="#FF9FA0" />
+
+    <ImageView
+        android:id="@+id/Eye"
+        android:layout_width="47dp"
+        android:layout_height="52dp"
+        app:layout_anchor="@+id/Circle"
+        app:layout_anchorGravity="center"
+        app:srcCompat="@drawable/closed_eye" />
+
+    <ImageView
+        android:id="@+id/Hands"
+        android:layout_width="93dp"
+        android:layout_height="100dp"
+        android:scaleY="1.25"
+        app:tint="#8391D8"
+        app:layout_anchorGravity="center"
+        android:translationX="158dp"
+        android:translationY="320dp"
+        app:srcCompat="@drawable/hands" />
+
+
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
