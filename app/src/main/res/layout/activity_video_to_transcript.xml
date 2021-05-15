@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoToTranscript">
+
+    <TextView
+        android:id="@+id/Transcript"
+        android:layout_width="248dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="27dp"
+        android:text="Transcript"
+        android:fontFamily="@font/inter_bold"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Transcript_Text"
+        android:layout_width="361dp"
+        android:layout_height="594dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="98dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="Hi Jane, it’s been a long time since we’ve talked. How have you been? Do you want to call this weekend?"
+        android:textColor="#000000"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:textSize="25dp"
+        android:background="@drawable/transcript_rounded_corners"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

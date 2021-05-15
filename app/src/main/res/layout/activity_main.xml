@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/Sign_Vision"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Sign Vision"
-        android:textSize="30dp"
-        android:textColor="@color/black"
-        android:fontFamily="@font/inter_semibold"
-        android:translationX="130dp"
-        android:translationY="600dp"
-        app:drawableTint="#000000"
-        app:layout_constraintTop_toTopOf="@+id/textView4" />
-
-
-    <include
-        android:id="@+id/include"
-        layout="@layout/content_main"
-        android:translationX="180dp"
-        android:translationY="360dp"
-        app:layout_anchor="@+id/include"
-        app:layout_anchorGravity="center" />
-
     <ImageView
         android:id="@+id/Circle"
-        android:layout_width="98dp"
-        android:layout_height="104dp"
-        android:scaleX="1.1"
-        android:scaleY="1.1"
-        android:translationX="155dp"
-        android:translationY="280dp"
+        android:layout_width="117dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="267dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/circle"
         app:tint="#FF9FA0" />
 
     <ImageView
         android:id="@+id/Eye"
-        android:layout_width="47dp"
-        android:layout_height="52dp"
+        android:layout_width="54.24dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="300dp"
         app:layout_anchor="@+id/Circle"
         app:layout_anchorGravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/closed_eye" />
 
     <ImageView
         android:id="@+id/Hands"
-        android:layout_width="93dp"
-        android:layout_height="100dp"
-        android:scaleY="1.25"
-        app:tint="#8391D8"
-        app:layout_anchorGravity="center"
-        android:translationX="158dp"
-        android:translationY="320dp"
-        app:srcCompat="@drawable/hands" />
+        android:layout_width="100dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="157dp"
+        android:layout_marginLeft="157dp"
+        android:layout_marginTop="320dp"
+        android:scaleY="1.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hands"
+        app:tint="#8391D8" />
+
+    <TextView
+        android:id="@+id/Sign_Vision"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginLeft="107dp"
+        android:layout_marginTop="625dp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Sign Vision"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
-
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

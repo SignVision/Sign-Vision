@@ -6,34 +6,111 @@
     android:layout_height="match_parent"
     tools:context=".HowToUse">
 
+    <ImageView
+        android:id="@+id/Circle"
+        android:layout_width="72dp"
+        android:layout_height="69.85dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle"
+        app:tint="#FF9FA0" />
+
+    <ImageView
+        android:id="@+id/Eye"
+        android:layout_width="33.78dp"
+        android:layout_height="29.19dp"
+        android:layout_marginStart="188dp"
+        android:layout_marginLeft="188dp"
+        android:layout_marginTop="28dp"
+        app:layout_anchor="@+id/Circle"
+        app:layout_anchorGravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/closed_eye" />
+
+    <ImageView
+        android:id="@+id/Hands"
+        android:layout_width="65dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="172dp"
+        android:layout_marginLeft="172dp"
+        android:layout_marginTop="48dp"
+        android:scaleY="1.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hands"
+        app:tint="#8391D8" />
+
+    <TextView
+        android:id="@+id/Sign_Vision"
+        android:layout_width="244dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginLeft="84dp"
+        android:layout_marginTop="120dp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Sign Vision"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Start_Chatting"
+        android:layout_width="195dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="188dp"
+        android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:text="Start chatting!"
+        android:textColor="#7B82B2"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="331dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="240dp"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center"
+        android:text="Translating sign language and speech to better understand one another"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/People"
+        android:layout_width="309dp"
+        android:layout_height="206dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="324dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/people_talking" />
+
     <Button
         android:id="@+id/SignLanguageText"
         android:layout_width="367dp"
         android:layout_height="57dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="148dp"
+        android:layout_marginTop="564dp"
         android:background="@drawable/sign_text_button"
         android:fontFamily="@font/inter_semibold"
         android:stateListAnimator="@null"
         android:text="Sign Language to Text"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/UploadVideo"
-        android:layout_width="367dp"
-        android:layout_height="57dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="288dp"
-        android:background="@drawable/upload_video_button"
-        android:fontFamily="@font/inter_semibold"
-        android:stateListAnimator="@null"
-        android:text="Speech to Text"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18dp"
@@ -46,7 +123,7 @@
         android:layout_height="57dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="632dp"
         android:background="@drawable/speech_text_button"
         android:fontFamily="@font/inter_semibold"
         android:stateListAnimator="@null"
@@ -57,141 +134,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/UploadVideo"
+        android:layout_width="367dp"
+        android:layout_height="57dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="96dp"
-        android:fontFamily="@font/inter_regular"
-        android:text="Start by choosing a translator: "
-        android:textColor="#000000"
-        android:textSize="22dp"
+        android:layout_marginTop="700dp"
+        android:background="@drawable/upload_video_button"
+        android:fontFamily="@font/inter_semibold"
+        android:stateListAnimator="@null"
+        android:text="Upload a Video"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/HTUtitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="How to Use"
-        android:textColor="#000000"
-        android:textSize="40dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/p1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/inter_regular"
-        android:text="translates sign language to text"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/h3" />
-
-    <TextView
-        android:id="@+id/p2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="4dp"
-        android:fontFamily="@font/inter_regular"
-        android:text="translates speech to text"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/h4" />
-
-    <TextView
-        android:id="@+id/p3"
-        android:layout_width="363dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/inter_regular"
-        android:text="of yourself speaking or using sign language. Sign Vision will provide a transcript of what is being said"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/h5" />
-
-    <TextView
-        android:id="@+id/warning"
-        android:layout_width="223dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="12dp"
-        android:fontFamily="@font/inter_regular"
-        android:text="Don't show this again"
-        android:textColor="#000000"
-        android:textSize="20dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/p3" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="22dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/p3"
-        app:srcCompat="@drawable/check" />
-
-    <TextView
-        android:id="@+id/h5"
-        android:layout_width="367dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="84dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="‘Upload a video’"
-        android:textColor="#FF9FA0"
-        android:textSize="22dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/h4" />
-
-    <TextView
-        android:id="@+id/h3"
-        android:layout_width="367dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="392dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="‘Sign Language to Text’"
-        android:textColor="#8391D8"
-        android:textSize="22dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/h4"
-        android:layout_width="367dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="92dp"
-        android:fontFamily="@font/inter_bold"
-        android:text="‘Speech to Text’"
-        android:textColor="#7CAAFC"
-        android:textSize="22dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/h3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
