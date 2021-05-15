@@ -6,51 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".SpeechToSign">
 
-    <Button
-        android:id="@+id/SpeechText"
-        android:layout_width="232dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="91dp"
-        android:layout_marginLeft="91dp"
-        android:layout_marginTop="70dp"
-        android:background="@drawable/scan_each_letter"
-        android:fontFamily="@font/inter_semibold"
-        android:stateListAnimator="@null"
-        android:text="Speak to the camera"
-        android:alpha="0.8"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/Sign_Translation"
-        android:layout_width="303dp"
-        android:layout_height="179.21dp"
-        android:layout_marginStart="55dp"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="470dp"
-        android:fontFamily="@font/inter_semibold"
-        android:gravity="center"
-        android:text="I'm doing well, how are you?"
-        android:textColor="#FFFFFF"
-        android:textSize="45dp"
-        android:background="@drawable/rounded_corner"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageButton
         android:id="@+id/back_button"
         android:layout_width="20dp"
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="0dp"
         android:background="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_back"
-        tools:ignore="VectorDrawableCompat" />
+        tools:ignore="VectorDrawableCompat"
+        android:onClick="BacktoHomePage"
+        />
+
+    <Button
+        android:id="@+id/SpeechText"
+        android:layout_width="232dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="0dp"
+        android:alpha="0.8"
+        android:background="@drawable/scan_each_letter"
+        android:fontFamily="@font/inter_semibold"
+        android:stateListAnimator="@null"
+        android:text="Speak to the camera"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
