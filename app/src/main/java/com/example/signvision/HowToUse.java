@@ -25,6 +25,7 @@ public class HowToUse extends AppCompatActivity {
                 if (checked){
                     Intent HomeIntent = new Intent(HowToUse.this, HomeActivity.class);
                     startActivity(HomeIntent);
+
                 }
                 else {
                     break;

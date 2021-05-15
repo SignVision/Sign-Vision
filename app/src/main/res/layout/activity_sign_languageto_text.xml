@@ -12,27 +12,25 @@
         android:layout_height="30dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="16dp"
         android:background="@null"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_back"
-        tools:ignore="VectorDrawableCompat"
-        android:onClick="BacktoHomePage"
-        />
+        tools:ignore="VectorDrawableCompat" />
 
     <Button
         android:id="@+id/SignLanguageText"
         android:layout_width="232dp"
         android:layout_height="38dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="0dp"
-        android:alpha="0.8"
+        android:layout_marginStart="91dp"
+        android:layout_marginLeft="91dp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/scan_each_letter"
         android:fontFamily="@font/inter_semibold"
         android:stateListAnimator="@null"
         android:text="Scan each letter"
+        android:alpha="0.8"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18dp"
@@ -43,17 +41,18 @@
         android:id="@+id/Sign_Translation"
         android:layout_width="303dp"
         android:layout_height="132dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="416dp"
-        android:background="@drawable/rounded_corner"
+        android:layout_marginStart="55dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="500dp"
         android:fontFamily="@font/inter_semibold"
         android:gravity="center"
         android:text="Hi, how are you today?"
         android:textColor="#FFFFFF"
         android:textSize="50dp"
+        android:background="@drawable/rounded_corner"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
