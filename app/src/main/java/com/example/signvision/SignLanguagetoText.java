@@ -11,7 +11,7 @@ public class SignLanguagetoText extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sign_languageto_text);
+        setContentView(R.layout.activity_sign_to_text);
     }
 
     public void BacktoHomePage(View view) {

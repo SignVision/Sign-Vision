@@ -9,6 +9,6 @@ public class TextToSign extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_video_to_transcript);
+        setContentView(R.layout.activity_text_to_sign);
     }
 }

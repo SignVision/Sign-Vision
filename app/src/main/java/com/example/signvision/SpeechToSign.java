@@ -11,7 +11,7 @@ public class SpeechToSign extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_speech_to_text);
+        setContentView(R.layout.activity_speech_to_sign);
     }
 
     public void BacktoHomePage(View view) {
@@ -20,5 +20,5 @@ public class SpeechToSign extends AppCompatActivity {
 
 
     }
-    
+
 }
