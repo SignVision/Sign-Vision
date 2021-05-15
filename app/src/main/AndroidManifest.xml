@@ -9,8 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".VideoToTranscript"></activity>
-        <activity android:name=".SpeechToText" />
+        <activity android:name=".TextToSign"></activity>
+        <activity android:name=".SpeechToSign" />
         <activity android:name=".SignLanguagetoText" />
         <activity android:name=".HowToUse" />
         <activity android:name=".HomeActivity" />

@@ -115,10 +115,11 @@
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onSignToTextClicked"/>
 
     <Button
-        android:id="@+id/SpeechToText"
+        android:id="@+id/SpeechToSign"
         android:layout_width="367dp"
         android:layout_height="57dp"
         android:layout_marginStart="20dp"
@@ -132,10 +133,11 @@
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onSpeechToSignClicked"/>
 
     <Button
-        android:id="@+id/UploadVideo"
+        android:id="@+id/TextToSign"
         android:layout_width="367dp"
         android:layout_height="57dp"
         android:layout_marginStart="20dp"
@@ -149,7 +151,8 @@
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onTextToSignClicked"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
