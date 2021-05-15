@@ -91,7 +91,7 @@
         android:layout_height="31dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="346dp"
+        android:layout_marginTop="366dp"
         android:fontFamily="@font/inter_bold"
         android:text="‘Sign Language to Text’"
         android:textColor="#8391D8"
@@ -105,7 +105,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         android:fontFamily="@font/inter_regular"
         android:text="translates sign language to text"
         android:textColor="#000000"
@@ -119,7 +119,7 @@
         android:layout_height="35dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         android:fontFamily="@font/inter_regular"
         android:text="translates text to sign language"
         android:textColor="#000000"
@@ -142,24 +142,19 @@
         app:layout_constraintTop_toTopOf="@+id/h3" />
 
 
-
-
-
     <TextView
         android:id="@+id/p2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="6dp"
         android:fontFamily="@font/inter_regular"
         android:text="translates speech to sign language"
         android:textColor="#000000"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/h4" />
-
-
 
     <TextView
         android:id="@+id/h5"
@@ -174,10 +169,6 @@
         android:textSize="22dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/h4" />
-
-
-
-
 
       <LinearLayout
           android:layout_width="fill_parent"
