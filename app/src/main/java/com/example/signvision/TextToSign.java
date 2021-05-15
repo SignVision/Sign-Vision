@@ -19,6 +19,9 @@ public class TextToSign extends AppCompatActivity {
     public void onTranslateClicked(View view) {
         EditText text = (EditText) findViewById(R.id.inputField);
         String value = text.getText().toString();
+        for(char c:value.toCharArray()){
+
+        }
 
 
     }
