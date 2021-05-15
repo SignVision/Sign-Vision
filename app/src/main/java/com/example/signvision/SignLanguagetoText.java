@@ -17,7 +17,5 @@ public class SignLanguagetoText extends AppCompatActivity {
     public void BacktoHomePage(View view) {
         Intent HomeIntent = new Intent(SignLanguagetoText.this, HomeActivity.class);
         startActivity(HomeIntent);
-
-
     }
 }
