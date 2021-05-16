@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import static com.example.signvision.SignLanguage.letterToSign;
@@ -13,10 +14,10 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        loadResourceValues();
         setContentView(R.layout.activity_home);
     }
-    public void loadResourceValues(String packageName){
+    public void loadResourceValues(){
         for(char c: "abcdefghijklmnopqrstuvwxyz".toCharArray()){
             letterToSign.put(c,getResources().getIdentifier("@drawable/"+c,null,this.getPackageName()));
         }
@@ -25,6 +26,7 @@ public class HomeActivity extends AppCompatActivity {
 
     }
     public void onSignToTextClicked(View view) {
+
         Intent SignToTextIntent = new Intent(HomeActivity.this, SignLanguagetoText.class);
         startActivity(SignToTextIntent);
 

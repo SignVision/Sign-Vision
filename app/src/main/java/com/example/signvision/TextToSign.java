@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import android.widget.EditText;
@@ -28,11 +29,14 @@ public class TextToSign extends AppCompatActivity {
     public void onTranslateClicked(View view) {
         EditText editText = (EditText) findViewById(R.id.inputField);
         text = editText.getText().toString();
+        Log.d("WORD ", Character.toString(text.charAt(curIndex)));
+        Log.d("NEXT ", Integer.toString(letterToSign.get(text.charAt(curIndex))));
         updateSign();
 
 
     }
     void updateSign(){
+        
         signImage.setImageResource(letterToSign.get(text.charAt(curIndex)));
 
     }
