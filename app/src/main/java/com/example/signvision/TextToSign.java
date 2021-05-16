@@ -21,6 +21,7 @@ public class TextToSign extends AppCompatActivity {
         String value = text.getText().toString();
         for(char c:value.toCharArray()){
 
+
         }
 
 
