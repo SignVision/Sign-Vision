@@ -41,15 +41,15 @@
 
 
     <ImageView
-        android:id="@+id/Translation_bg"
+        android:id="@+id/Sign_Image"
         android:layout_width="350dp"
-        android:layout_height="100dp"
+        android:layout_height="214dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="304dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/sign_bg"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/sign_translation" />
 
     <TextView
         android:id="@+id/sign_translation"
@@ -57,7 +57,7 @@
         android:layout_height="40dp"
         android:layout_marginStart="116dp"
         android:layout_marginLeft="116dp"
-        android:layout_marginTop="316dp"
+        android:layout_marginTop="260dp"
         android:fontFamily="@font/inter_semibold"
         android:text="Translation:"
         android:textColor="@color/black"
@@ -65,38 +65,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/Sign_Image"
-        android:layout_width="350dp"
-        android:layout_height="214dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/sign_bg"
-        android:layout_marginTop="25dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sign_translation" />
-
-    <ImageButton
-        android:id="@+id/Previousletter"
-        android:layout_width="20dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="472dp"
-        android:background="@null"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_back"
-        android:onClick="onPrevClicked"
-        tools:ignore="VectorDrawableCompat" />
-
     <ImageButton
         android:id="@+id/Nextletter"
         android:layout_width="20dp"
         android:layout_height="30dp"
         android:layout_marginStart="348dp"
         android:layout_marginLeft="348dp"
-        android:layout_marginTop="472dp"
+        android:layout_marginTop="416dp"
         android:background="@null"
         android:onClick="onNextClicked"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +85,7 @@
         android:layout_height="47dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="608dp"
+        android:layout_marginTop="552dp"
         android:background="@drawable/speech_text_button"
         android:fontFamily="@font/inter_semibold"
         android:stateListAnimator="@null"
@@ -127,12 +102,37 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
         android:layout_marginLeft="144dp"
-        android:layout_marginTop="652dp"
+        android:layout_marginTop="596dp"
         android:background="@null"
 
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/ic_record"
         tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Previousletter"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="416dp"
+        android:background="@null"
+        android:onClick="onPrevClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/Translation_bg"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/sign_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
