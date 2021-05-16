@@ -39,6 +39,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
+    <ImageView
+        android:id="@+id/Translation_bg"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="304dp"
+        android:background="@drawable/sign_bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/sign_translation"
         android:layout_width="160dp"
@@ -93,30 +105,13 @@
         tools:ignore="VectorDrawableCompat" />
 
     <Button
-        android:id="@+id/Record_Button"
-        android:layout_width="347dp"
-        android:layout_height="47dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="616dp"
-        android:background="@drawable/speech_text_button"
-        android:fontFamily="@font/inter_semibold"
-        android:stateListAnimator="@null"
-        android:text="Record"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textSize="18dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/Translate_Button2"
         android:layout_width="347dp"
         android:layout_height="47dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="676dp"
-        android:background="@drawable/sign_text_button"
+        android:layout_marginTop="608dp"
+        android:background="@drawable/speech_text_button"
         android:fontFamily="@font/inter_semibold"
         android:stateListAnimator="@null"
         android:text="Translate"
@@ -125,5 +120,19 @@
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/Record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginLeft="144dp"
+        android:layout_marginTop="652dp"
+        android:background="@null"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_record"
+        tools:ignore="VectorDrawableCompat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

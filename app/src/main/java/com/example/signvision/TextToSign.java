@@ -34,7 +34,6 @@ public class TextToSign extends AppCompatActivity {
 
     }
     void updateSign(){
-        
         signImage.setImageResource(letterToSign.get(text.charAt(curIndex)));
 
     }
