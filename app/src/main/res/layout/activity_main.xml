@@ -7,23 +7,11 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/Circle"
-        android:layout_width="117dp"
-        android:layout_height="117dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginLeft="136dp"
-        android:layout_marginTop="220dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/circle"
-        app:tint="#FF9FA0" />
-
-    <ImageView
         android:id="@+id/Hands"
         android:layout_width="100dp"
         android:layout_height="120dp"
-        android:layout_marginStart="144dp"
-        android:layout_marginLeft="144dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
         android:layout_marginTop="276dp"
         android:scaleY="1.2"
         app:layout_constraintStart_toStartOf="parent"
@@ -35,8 +23,8 @@
         android:id="@+id/Eye"
         android:layout_width="54.24dp"
         android:layout_height="50dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginLeft="168dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
         android:layout_marginTop="256dp"
         app:layout_anchor="@+id/Circle"
         app:layout_anchorGravity="center"
@@ -44,12 +32,24 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/closed_eye" />
 
+    <ImageView
+        android:id="@+id/Circle"
+        android:layout_width="117dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="220dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/circle"
+        app:tint="#FF9FA0" />
+
     <TextView
         android:id="@+id/Sign_Vision"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_marginStart="96dp"
-        android:layout_marginLeft="96dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
         android:layout_marginTop="564dp"
         android:fontFamily="@font/inter_semibold"
         android:gravity="center"
