@@ -4,7 +4,7 @@
 </p>
 
 ### Inspiration
-In these times, clear communication is more important than ever before. With over 72 million people in the world being deaf (UN), it is extremely important that these people get access to the services they need in a safe and comfortable manner. From official communications to accessing small businesses, it is crucial that those who are deaf have an quick and easy aid, in the very likely case that the service or retail workers are unable to communicate with them in sign language.
+In these times, clear communication is more important than ever before. With over 72 million people in the world being deaf (UN), it is extremely important that those who are hearing impaired get access to the services they need in a safe and comfortable manner. From official communications to accessing small businesses, it is crucial that those who are deaf have an quick and easy aid, in the very likely case that the service or retail workers are unable to communicate with them in sign language.
 
 Our team wanted to create an app to help improve communication and accessibility at local businesses and services. Meet Sign Vision, an app that helps connect people through sign language interpretation.
 
