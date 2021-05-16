@@ -18,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
     }
     public void loadResourceValues(String packageName){
         for(char c: "abcdefghijklmnopqrstuvwxyz".toCharArray()){
-            letterToSign.put(c,getResources().getIdentifier("@drawable/"+c,null,this.getPackageName()))
+            letterToSign.put(c,getResources().getIdentifier("@drawable/"+c,null,this.getPackageName()));
         }
 
     }
