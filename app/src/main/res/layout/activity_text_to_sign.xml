@@ -8,6 +8,19 @@
     tools:context=".TextToSign">
 
     <ImageButton
+        android:id="@+id/back_button2"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="@null"
+        android:onClick="BacktoHomePage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
         android:id="@+id/back_button"
         android:layout_width="20dp"
         android:layout_height="30dp"
@@ -66,7 +79,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <ImageView
         android:id="@+id/Sign_Image"
         android:layout_width="350dp"
         android:layout_height="214dp"
@@ -76,6 +89,34 @@
         android:layout_marginTop="25dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/sign_translation" />
+
+    <ImageButton
+        android:id="@+id/Previousletter"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="472dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        android:onClick="onPrevClicked"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Nextletter"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="348dp"
+        android:layout_marginLeft="348dp"
+        android:layout_marginTop="472dp"
+        android:background="@null"
+        android:onClick="onNextClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_forward"
+        tools:ignore="VectorDrawableCompat" />
 
     <Button
         android:id="@+id/Translate_Button"
@@ -87,7 +128,7 @@
         android:background="@drawable/upload_video_button"
         android:fontFamily="@font/inter_semibold"
         android:stateListAnimator="@null"
-        android:text="Text to Sign Language"
+        android:text="Translate"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18dp"

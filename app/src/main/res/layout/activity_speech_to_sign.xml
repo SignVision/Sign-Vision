@@ -39,4 +39,91 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/sign_translation"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="316dp"
+        android:fontFamily="@font/inter_semibold"
+        android:text="Translation:"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/Sign_Image"
+        android:layout_width="350dp"
+        android:layout_height="214dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/sign_bg"
+        android:layout_marginTop="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sign_translation" />
+
+    <ImageButton
+        android:id="@+id/Previousletter"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="472dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back"
+        android:onClick="onPrevClicked"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageButton
+        android:id="@+id/Nextletter"
+        android:layout_width="20dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="348dp"
+        android:layout_marginLeft="348dp"
+        android:layout_marginTop="472dp"
+        android:background="@null"
+        android:onClick="onNextClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_forward"
+        tools:ignore="VectorDrawableCompat" />
+
+    <Button
+        android:id="@+id/Record_Button"
+        android:layout_width="347dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="616dp"
+        android:background="@drawable/speech_text_button"
+        android:fontFamily="@font/inter_semibold"
+        android:stateListAnimator="@null"
+        android:text="Record"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Translate_Button2"
+        android:layout_width="347dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="676dp"
+        android:background="@drawable/sign_text_button"
+        android:fontFamily="@font/inter_semibold"
+        android:stateListAnimator="@null"
+        android:text="Translate"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
