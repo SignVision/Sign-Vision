@@ -46,6 +46,7 @@ public class SignLanguagetoText extends AppCompatActivity {
 
     public void takePicture() {
         symbols = new ArrayList<>();
+        textViewResult.setText("");
         Intent imageTakeIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         if (imageTakeIntent.resolveActivity(getPackageManager()) != null) {
             startActivityForResult(imageTakeIntent, REQUEST_IMAGE_CAPTURE);
