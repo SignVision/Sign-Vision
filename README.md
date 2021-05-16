@@ -1,5 +1,6 @@
+<br/>
 <p align="center">
-  <img src="screenshots/SignVisionLogo.png" alt="Logo" width="200px" /><br />
+  <img src="screenshots/SignVisionLogo.png" alt="Logo" width="200px" /><br/>
 </p>
 
 ### Inspiration
