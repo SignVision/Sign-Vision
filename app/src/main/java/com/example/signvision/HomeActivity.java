@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
-import static com.example.signvision.SignLanguage.letterToSign;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
+import static com.example.signvision.Constants.backendAPI;
+import static com.example.signvision.Constants.letterToSign;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -15,6 +18,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         loadResourceValues();
+        loadApiBackend();
         setContentView(R.layout.activity_home);
     }
     public void loadResourceValues(){
@@ -23,6 +27,14 @@ public class HomeActivity extends AppCompatActivity {
         }
         letterToSign.put(' ',getResources().getIdentifier("@drawable/a",null,this.getPackageName()));
 
+
+    }
+    public void loadApiBackend(){
+        Retrofit retrofit = new Retrofit.Builder()
+                .baseUrl("http://167.99.119.124:3000/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        backendAPI = retrofit.create(BackendAPI.class);
 
     }
     public void onSignToTextClicked(View view) {

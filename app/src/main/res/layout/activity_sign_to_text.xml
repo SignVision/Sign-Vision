@@ -37,7 +37,8 @@
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="takePicture"/>
 
     <TextView
         android:id="@+id/Sign_Translation"
@@ -54,5 +55,5 @@
         android:textSize="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="takePicture"/>
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
