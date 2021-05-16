@@ -30,7 +30,7 @@ public class SignLanguagetoText extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_to_text);
-        textViewResult = findViewById(R.id.sign_translation);
+        textViewResult = findViewById(R.id.Sign_Translation);
     }
 
     public void BacktoHomePage(View view) {
@@ -67,7 +67,9 @@ public class SignLanguagetoText extends AppCompatActivity {
                         return;
 
                     }
+
                     Post postResponse = response.body();
+
                     textViewResult.setText(postResponse.getText()+"\n");
                 }
 
