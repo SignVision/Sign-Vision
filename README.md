@@ -1,4 +1,6 @@
-# Sign-Vision
+<p align="center">
+  <img src="screenshots/cover.png" alt="cover" width="200px" /><br />
+</p>
 
 ### About
 Sign vision is an android app that improves communication and accessibility at local businesses and services. 
