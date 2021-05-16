@@ -28,7 +28,7 @@ public class TextToSign extends AppCompatActivity {
     public void onTranslateClicked(View view) {
         EditText editText = (EditText) findViewById(R.id.inputField);
         text = editText.getText().toString();
-
+        updateSign();
 
     }
     void updateSign(){
@@ -37,12 +37,14 @@ public class TextToSign extends AppCompatActivity {
     }
     public void onNextClicked(View view) {
         if(curIndex<text.length()) curIndex+=1;
+        updateSign();
 
     }
     public void onPrevClicked(View view){
         if(curIndex>=0){
             curIndex-=1;
         }
+        updateSign();
     }
 
 
