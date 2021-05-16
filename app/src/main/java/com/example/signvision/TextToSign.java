@@ -30,10 +30,6 @@ public class TextToSign extends AppCompatActivity {
         text = editText.getText().toString();
 
 
-
-
-
-
     }
     void updateSign(){
         signImage.setImageResource(letterToSign.get(text.charAt(curIndex)));

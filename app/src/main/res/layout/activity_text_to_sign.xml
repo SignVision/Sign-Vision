@@ -133,5 +133,6 @@
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="onTranslateClicked"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
