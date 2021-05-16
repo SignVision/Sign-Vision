@@ -18,18 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/people_talking" />
 
-    <ImageView
-        android:id="@+id/Eye"
-        android:layout_width="33.78dp"
-        android:layout_height="29.19dp"
-        android:layout_marginStart="156dp"
-        android:layout_marginLeft="156dp"
-        android:layout_marginTop="24dp"
-        app:layout_anchor="@+id/Circle"
-        app:layout_anchorGravity="center"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/closed_eye" />
+
 
     <ImageView
         android:id="@+id/Hands"
@@ -147,13 +136,26 @@
         android:id="@+id/Circle"
         android:layout_width="72dp"
         android:layout_height="69.85dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginLeft="136dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginLeft="138dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/circle"
         app:tint="#FF9FA0" />
+
+    <ImageView
+        android:id="@+id/Eye"
+        android:layout_width="33.78dp"
+        android:layout_height="29.19dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:layout_marginTop="28dp"
+        app:layout_anchor="@+id/Circle"
+        app:layout_anchorGravity="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/closed_eye" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
