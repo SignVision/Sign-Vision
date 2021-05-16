@@ -21,39 +21,39 @@
         android:onClick="BacktoHomePage"
         />
 
-    <Button
+    <TextView
         android:id="@+id/SignLanguageText"
         android:layout_width="232dp"
         android:layout_height="38dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="0dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
         android:alpha="0.8"
         android:background="@drawable/scan_each_letter"
         android:fontFamily="@font/inter_semibold"
+        android:gravity="center"
+        android:onClick="takePicture"
         android:stateListAnimator="@null"
         android:text="Scan each letter"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="18dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:onClick="takePicture"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
+    <Button
         android:id="@+id/Sign_Translation"
         android:layout_width="303dp"
         android:layout_height="132dp"
         android:layout_marginStart="44dp"
         android:layout_marginLeft="44dp"
-        android:layout_marginTop="416dp"
+        android:layout_marginTop="412dp"
         android:background="@drawable/rounded_corner"
         android:fontFamily="@font/inter_semibold"
         android:gravity="center"
-        android:text="Take a Picture"
+        android:text="Take a picture"
+        android:textAllCaps="false"
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
