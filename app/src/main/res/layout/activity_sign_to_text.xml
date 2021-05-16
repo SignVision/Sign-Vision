@@ -49,9 +49,10 @@
         android:background="@drawable/rounded_corner"
         android:fontFamily="@font/inter_semibold"
         android:gravity="center"
-        android:text="Hi, how are you today?"
+        android:text="Take a Picture"
         android:textColor="#FFFFFF"
         android:textSize="50dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="takePicture"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
