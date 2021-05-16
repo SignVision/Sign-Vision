@@ -20,6 +20,8 @@ public class HomeActivity extends AppCompatActivity {
         for(char c: "abcdefghijklmnopqrstuvwxyz".toCharArray()){
             letterToSign.put(c,getResources().getIdentifier("@drawable/"+c,null,this.getPackageName()));
         }
+        letterToSign.put(' ',getResources().getIdentifier("@drawable/a",null,this.getPackageName()));
+
 
     }
     public void onSignToTextClicked(View view) {
