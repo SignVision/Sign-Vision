@@ -19,4 +19,4 @@ Through Sign Vision, users can record someone performing sign language through t
 - Retrofit
 - Python
 - Node.js
-- TensorFlow
+- TensorFlow 
